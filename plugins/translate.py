@@ -12,6 +12,7 @@ from helper.list import list
 async def start(client, message):
           insert(int(message.chat.id))
           await message.reply_text(text =f"sᴀʟᴀᴍ **{message.from_user.first_name }** \n\n __ᴍəɴ ᴛəʀçüᴍəçɪ̇ ʙᴏᴛ 🌍'ᴀᴍ \n ᴍəɴ ɢöɴᴅəʀᴅɪ̇ʏɪ̇ɴ ᴍᴇsᴀᴊı sᴇçᴅɪ̇ʏɪ̇ɴ ᴅɪ̇ʟə ᴛəʀᴄüᴍə ᴇᴛᴍəᴋ üçüɴ ᴋᴏᴅʟᴀşᴅıʀıʟᴍışᴀᴍʙᴀşʟᴀᴍᴀǫ üçüɴ ᴍəɴə 1 ᴍᴇsᴀᴊ ɢöɴᴅəʀ__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(            [                [                    InlineKeyboardButton("ʏᴇɴɪ̇ʟɪ̇ᴋ 🌀" ,url="https://t.me/TercumeciYenilik") ],                 [InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ 🌐", url="https://t.me/Nixhadj"),InlineKeyboardButton("ʙʟᴏɢ 🌴",url = "https://t.me/Nixhaad") ]           ]        ) )
+          ),InlineKeyboardButton("➕ ǫʀᴜᴘᴀ əʟᴀᴠə ᴇᴛ",url = "https://t.me/TercumeciRobot?startgroup=a") ]           ]        ) )
             
             
 @Client.on_message(filters.private & filters.text  )
